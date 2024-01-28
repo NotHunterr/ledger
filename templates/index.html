@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTMX Form Submission with Go</title>
+    <script src="https://unpkg.com/htmx.org/dist/htmx.js"></script>
+</head>
+<body>
+    <form id="myForm" hx-post="/submit" hx-target="#result" hx-swap="outerHTML">
+        <input type="text" id="username-input" name="textInput" placeholder="Enter something">
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="result"></div>
+</body>
+</html>
